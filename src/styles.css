@@ -1,0 +1,212 @@
+/* Global Styles */
+* {
+    box-sizing: border-box; /* Ensure padding and borders are included in element's total width and height */
+    margin: 0; /* Remove default margin for a consistent look */
+    padding: 0; /* Remove default padding for a consistent look */
+  }
+  
+  /* Optional: Set a default font and line height for better readability */
+  body {
+    font-family: 'Arial', sans-serif; /* Apply a clean and widely-supported font */
+    line-height: 1.6; /* Improve readability by increasing line height */
+    color: #333333; /* Set a base text color for better contrast */
+    background: linear-gradient(135deg, red, #ffffff); /* Gradient background for a fresh, modern look */
+    background-attachment: fixed; /* Keep background fixed during scroll */
+    text-align: left; /* Align text to the left for better readability in Western languages */
+    overflow-x: hidden; /* Prevent horizontal scrollbars in case of overflow */
+  }
+  
+  /* Optional: Provide a consistent look for all headings */
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5em; /* Add spacing below headings */
+    font-weight: bold; /* Ensure headings stand out */
+  }
+  
+  /* Optional: Provide consistent spacing for lists */
+  ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Remove default list styling */
+  }
+  
+  /* Optional: Provide a consistent base for links */
+  a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Set a consistent link color */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Add underline on hover for better user experience */
+  }
+  
+  /* Optional: Reset border styles for all elements */
+  button, input, select, textarea {
+    border: none; /* Remove default border styles */
+    background: transparent; /* Ensure consistent background for form elements */
+  }
+  
+  /* App Container Styles */
+  .App {
+    max-width: 800px; /* Limit the width to 800px for a centered, manageable content area */
+    margin: 20px auto; /* Center the element horizontally and add vertical spacing */
+    padding: 30px; /* Add space inside the element for content spacing */
+    background-color: #ffffff; /* White background for a clean and neutral appearance */
+    border-radius: 10px; /* Rounded corners for a softer, more modern look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth and separation from the background */
+    overflow: hidden; /* Prevent content from overflowing outside the container */
+    position: relative; /* Ensure proper stacking context for absolute positioned elements if needed */
+  }
+  
+  /* Header Styles */
+  h1 {
+    font-size: 2.5rem; /* Set a large font size for emphasis */
+    color: #333; /* Dark grey color for high contrast and readability */
+    text-align: center; /* Center-align text for a balanced appearance */
+    margin-bottom: 30px; /* Add spacing below the header to separate it from other elements */
+    animation: fadeIn 1s ease-in-out; /* Apply a fade-in animation for a smooth entrance effect */
+    line-height: 1.2; /* Adjust line height for improved readability and spacing */
+    font-weight: bold; /* Make the header text bold to enhance visibility */
+  }
+  
+  /* Optional: Define the fadeIn animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Start with the header invisible */
+    }
+    to {
+      opacity: 1; /* End with the header fully visible */
+    }
+  }
+  
+  /* Search Bar Styles */
+  input[type="text"].search-bar {
+    border: 2px solid #ddd; /* Light grey border for a subtle and clean look */
+    border-radius: 6px; /* Slightly rounded corners for a modern appearance */
+    padding: 12px; /* Add space inside the input for comfortable text entry */
+    font-size: 1rem; /* Set a base font size for readability */
+    width: calc(100% - 24px); /* Full width minus padding for consistent alignment */
+    margin-bottom: 20px; /* Add spacing below the input for separation from other elements */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for border color and shadow changes */
+    box-sizing: border-box; /* Ensure padding and border are included in the total width */
+  }
+  
+  /* Focus Styles */
+  input[type="text"].search-bar:focus {
+    border-color: #3498db; /* Highlight border color on focus for better visibility */
+    outline: none; /* Remove default outline to customize focus style */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2); /* Apply a subtle shadow to enhance the focus effect */
+  }
+  
+  /* Optional: Add placeholder styling for better user experience */
+  input[type="text"].search-bar::placeholder {
+    color: #aaa; /* Light grey placeholder text for a softer look */
+    font-style: italic; /* Italicize placeholder text for differentiation */
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange child elements in a column */
+    gap: 15px; /* Add spacing between form elements */
+  }
+  
+  /* Input and Textarea Styles */
+  input[type="text"].task-title,
+  textarea {
+    border: 2px solid #ddd; /* Light grey border for a clean look */
+    border-radius: 6px; /* Rounded corners for a modern appearance */
+    padding: 12px; /* Add space inside the input/textarea */
+    font-size: 1rem; /* Base font size for readability */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus state */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
+  
+  /* Focus Styles for Inputs and Textareas */
+  input[type="text"].task-title:focus,
+  textarea:focus {
+    border-color: #3498db; /* Highlight border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2); /* Add subtle shadow on focus */
+  }
+  
+  /* Textarea Specific Styles */
+  textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 120px; /* Set a minimum height for textareas */
+  }
+  
+  /* Button Styles */
+  button {
+    background-color: #3498db; /* Primary button color */
+    color: #ffffff; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 6px; /* Rounded corners for the button */
+    padding: 12px 24px; /* Adequate padding for button size */
+    font-size: 1rem; /* Base font size for readability */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for hover and active states */
+  }
+  
+  /* Button Hover State */
+  button:hover {
+    background-color: #2980b9; /* Darker shade on hover */
+  }
+  
+  /* Button Active State */
+  button:active {
+    transform: scale(0.98); /* Slightly scale down on click */
+  }
+  
+  /* Task List Styles */
+  ul {
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    list-style: none; /* Remove default list styling */
+  }
+  
+  /* List Item Styles */
+  li {
+    background-color: #fafafa; /* Light background for list items */
+    border: 1px solid #e0e0e0; /* Light grey border for separation */
+    border-radius: 8px; /* Rounded corners for list items */
+    padding: 20px; /* Add space inside the list items */
+    margin-bottom: 15px; /* Space between list items */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  /* List Item Hover State */
+  li:hover {
+    background-color: #f0f0f0; /* Slightly darker background on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+  }
+  
+  /* Completed Task Style */
+  li.completed {
+    background-color: #e0f7e0; /* Light green background for completed tasks */
+    text-decoration: line-through; /* Strike-through text for completed tasks */
+  }
+  
+  /* Task Item Header Styles */
+  .task-header {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between header elements */
+    align-items: center; /* Center align items vertically */
+    margin-bottom: 10px; /* Space below the header */
+  }
+  
+  /* Task Header Text Style */
+  .task-header span {
+    font-size: 1.2rem; /* Slightly larger font size for header text */
+    font-weight: bold; /* Make header text bold */
+    color: #2c3e50; /* Dark color for better readability */
+  }
+  
+  /* Task Header Checkbox Style */
+  .task-header input[type="checkbox"] {
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  /* Task Details Styles */
+  /* Space above the task details section */
+   
+  

@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "title": "Complete Homework",
+      "description": "Finish math and science homework for the week.",
+      "completed": false,
+      "timestamp": "2024-07-28T12:00:00Z",
+      "priority": "High",
+      "dueDate": "2024-08-01"
+    },
+    {
+      "id": 2,
+      "title": "Grocery Shopping",
+      "description": "Buy milk, eggs, bread, and other essentials.",
+      "completed": false,
+      "timestamp": "2024-07-29T15:00:00Z",
+      "priority": "Medium",
+      "dueDate": "2024-07-30"
+    },
+    {
+      "id": 3,
+      "title": "Doctor's Appointment",
+      "description": "Attend the annual check-up at the clinic.",
+      "completed": false,
+      "timestamp": "2024-07-30T09:00:00Z",
+      "priority": "High",
+      "dueDate": "2024-08-05"
+    },
+    {
+      "id": 4,
+      "title": "Read a Book",
+      "description": "Finish reading 'The Great Gatsby'.",
+      "completed": true,
+      "timestamp": "2024-07-25T18:00:00Z",
+      "priority": "Low",
+      "dueDate": "2024-08-10"
+    },
+    {
+      "id": 5,
+      "title": "Workout",
+      "description": "Complete a 45-minute workout session at the gym.",
+      "completed": false,
+      "timestamp": "2024-07-28T07:00:00Z",
+      "priority": "Medium",
+      "dueDate": "2024-07-31"
+    },
+    {
+      "id": 6,
+      "title": "Prepare Presentation",
+      "description": "Create slides for the upcoming project presentation.",
+      "completed": false,
+      "timestamp": "2024-07-29T11:00:00Z",
+      "priority": "High",
+      "dueDate": "2024-08-03"
+    }
+  ]
+  
