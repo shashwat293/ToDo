@@ -41,7 +41,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/Shashwat293/todo-list.git
+git clone https://github.com/shashwat293/ToDo.git
 cd todo-list
 Install dependencies:
 
